@@ -1,7 +1,7 @@
 /* @refresh reload */
 import { render } from "solid-js/web";
 
-import Dropdown from "./App";
+import App from "./App";
 
 const root = document.getElementById("root");
 
@@ -27,7 +27,7 @@ const options = [
 
 render(
   () => (
-    <Dropdown
+    <App
       options={options}
       style={{ left: "100px", top: "100px", width: "100px", height: "100px" }}
     />

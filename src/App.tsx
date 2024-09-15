@@ -3,7 +3,7 @@ import { IconTypes } from "solid-icons";
 import { animate } from "motion";
 import { createSignal, JSX } from "solid-js";
 
-import "./dropdown.css";
+import "./app.css";
 
 type Option = {
   name: string;
@@ -16,7 +16,7 @@ interface DropdownProps {
   options: Option[];
 }
 
-const Dropdown: Component<DropdownProps> = ({ options, style }) => {
+const App: Component<DropdownProps> = ({ options, style }) => {
   const [hoveredItem, setHoveredItem] = createSignal<string | null>(null);
 
   const handleMouseEnter = (name: string) => {
@@ -54,4 +54,4 @@ const Dropdown: Component<DropdownProps> = ({ options, style }) => {
   );
 };
 
-export default Dropdown;
+export default App;

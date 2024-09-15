@@ -1,13 +1,18 @@
-import type { Component } from 'solid-js';
-import Comp from './Comp';
+import type { Component } from "solid-js";
+import { IconTypes } from "solid-icons";
 
-const App: Component = () => {
-  return (
-    <>
-      <h1>Hello world!!!!</h1>
-      <Comp />
-    </>
-  );
+const ITEMS = ["Item 1", "Item 2", "Item 3"];
+
+type Option = {
+  name: string;
+  icon?: string;
+};
+
+const Dropdown: Component = () => {
+  /*
+  - 
+  */
+  return <></>;
 };
 
 export default App;
